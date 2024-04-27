@@ -3,49 +3,48 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+   
 }
 
 header {
-    height: 500px;
-    background-image: url("https://wallpapers.com/images/hd/gotham-bat-signal-in-the-sky-hqdxp34ao39p75bd.jpg");
-    background-position: 100%;
-    background-size:cover;
-    padding-top: 40px;
-}
-
-.navigation {
-    width: 50%;
-    height: 10%;
-    background-color: #fff;
-    padding: 20px 20px;
-    margin-left: 300px;
-    margin-top: 100px;
+    height: 120px;
     display: flex;
-    justify-content: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 10px;
+    background-color: black;
+}
+
+nav {
+    width: 70%;
+    
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
 }
 
 li {
     list-style: none;
-    font-size: 22px;
-    font-family:fantasy;
+    color: white;
     cursor: pointer;
+    font-size: 22px;
     transition: .5s;
-    display: flex;
-    justify-content:right;
-    padding: 50px;
+    font-family: 'kdam Thmor Pro', sans-serif;
 }
 
 li:hover {
     color: brown;
 }
-    
 
+.logoheader {
+    width: 250px;
+    height: auto;
+}
+    
 .main-contact {
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -83,9 +82,7 @@ li:hover {
 
 footer {
     height: 170px;
-    background-image: url("https://t4.ftcdn.net/jpg/02/66/01/31/360_F_266013160_DzhOtuwGf7uFfmkABaYDgq528vgRXGVa.jpg") ;
-    background-size: cover;
-    background-position: 100%;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
