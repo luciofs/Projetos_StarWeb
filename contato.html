@@ -1,22 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LUCIO - Projeto 01 - Contatos</title>
-    </head>
-    <body>
-        <header> 
+<html lang="pt-BR">
 
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto 1 - Contato</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
 
-        <main>
-            <h1>Página de Contatos</h1>
-        </main>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contact">
+        <form class="form-contact">
+            <label class="entry-label" for="name">Nome Completo</label>
+            <input class="entry" type="text" name="" id="name" required>
 
-        <footer>
+            <label class="entry-label" for="email">Email</label>
+            <input class="entry" type="email" name="" id="email" required>
 
-        </footer>
-    </body>
+            <label class="entry-label" for="phone">Número para contato</label>
+            <input class="entry" type="tel" name="" id="phone" required>
+
+            <label class="entry-label" for="message">Deixe aqui sua mensagem</label>
+            <textarea class="entry" name="" id="message" cols="30" rows="10"></textarea>
+
+            <div class="div-entry">
+                <p class="entry-label"> Como prefere nosso contato?</p>
+                <label class="entry-label" for="email-choice"><input type="radio" name="contact-choice"
+                        id="email-choice"> Email</label>
+
+                <label class="entry-label" for="phone-choice"><input type="radio" name="contact-choice"
+                        id="phone-choice"> Telefone</label>
+
+                <label class="entry-label" for="whatsapp-choice" lang="en"><input type="radio" name="contact-choice"
+                        id="whatsapp-choice"> Whatsapp</label>
+            </div>
+            <label class="entry-label" for="day-period">Em qual horário prefere ser atendido?</label>
+            <select class="entry" name="day-period" id="">
+                <option value="none">---Selecione aqui</option>
+                <option value="morning">Manhã</option>
+                <option value="afternoon">Tarde</option>
+                <option value="evening">Noite</option>
+            </select>
+
+            <label for="check-mailing" class="entry-label" id="checkbox">Gostaria de receber nossas novidades por email?
+                <input type="checkbox" name="" id="check-mailing"></label>
+
+            <input class="entry" type="submit" value="Enviar formulário">
+        </form>
+    </main>
+    <footer>
+        <img style="object-fit: contain;" id="logofooter" src="./LOGO LF menor.png" alt="Logo LF Tecnologia"/>
+        <span id="spanfooter-one">Todos Direitos Reservados</span>
+        <span id="spanfooter-two">Copyright © 2024</span>
+        <p id="Copyright">©</p>
+        <span id="spanfooter-three">Desenvolvido por: LUCIO FLAVIO SANTOS</span>   
+        
+        <nav class="footer-nav">
+            <ul class="footer-list">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./contato.html" target="_blank"><li>Contato</li></a>
+                <a href="./fotos.html" target="_blank"><li>Fotos</li></a>
+                <a href="./comentarios.html" target="_blank"><li>Comentários</li></a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
 </html>
