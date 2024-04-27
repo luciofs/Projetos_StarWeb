@@ -7,24 +7,22 @@
 }
 
 header {
+    width: 100%;
     height: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
     background-color: black;
 }
 
 nav {
     width: 70%;
-    
 }
 
 ul {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
-    
 }
 
 li {
@@ -46,25 +44,54 @@ li:hover {
 }
 
 .banner {
-    background-image: url("https://i.pinimg.com/736x/0a/e8/88/0ae888cfe062486a6b2afe0ba0864799.jpg");
-    background-position:50% 50%;
-    background-size: auto;
     width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url("https://i.pinimg.com/736x/0a/e8/88/0ae888cfe062486a6b2afe0ba0864799.jpg");
+    background-size: auto;
+    height: 485px;
 }
 
-.construction {
-    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLE11pewiK5TZfznQl2O6VNT4KIqDS2IlIp9ZNAkiPdGmMgFZ0nYaxYMq5550hK7bnQuqP23Na1TL6iT4p6BSlk0N1MHmPfDhPTk8hZxTUumvl7lB6X95hpmnXSCjq8ETGuRtvt5gLoZjA/s1600/site_em_construcao.jpg");
-    background-position:50% 50%;
-    background-size: cover;
+.actor-cards-container {
     width: 100%;
-    height: 400px;
+    height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
+    background-color: black;
+}
+
+.cards-content {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    
+}
+
+.cards {
+    width: 70%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cards:hover {
+    transform: scale(1.35);
+}
+
+#legenda {
+    padding-left: 10px;
 }
 
 footer {
