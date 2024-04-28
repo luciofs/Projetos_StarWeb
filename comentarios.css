@@ -4,6 +4,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    background-color: black;
 }
 header {
     height: 120px;
@@ -44,7 +45,7 @@ li:hover {
     height: auto;
 }
 
-.banner {
+#banner {
     background-image: url("https://media.istockphoto.com/id/1179785918/pt/vetorial/testimonial-speech-bubble-concept-customer-feedback-for-info-graphic-application-and.jpg?s=612x612&w=0&k=20&c=xeA9kyk-WEpLTLnDmZSsWDIE-OIWKdkNEquRp7nIB2w=");
     background-position:50% 50%;
     background-size: auto;
@@ -65,35 +66,119 @@ li:hover {
     justify-content: center;
     align-items: center;
 }
+
 footer {
+    width: 100%;
     height: 170px;
-    background-color: black;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.logoLFimage {
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-}
-
-#logofooter {
-    width: 150px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 15px;
 }
 
 #spanfooter {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
-    margin-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer-nav {
+    display: none;
+}
+
+
+@media(max-width: 768px){
+    
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+        align-items: center;
+    }
+
+    #trailler-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .trailler {
+        width: 100%;
+    }
+    
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logoLF {
+        width: 50%;
+        display: block;
+        justify-content: center;
+    }
+
+    .logoLFimage {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #spanfooter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-nav {
+        width: 50%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+       
 }
