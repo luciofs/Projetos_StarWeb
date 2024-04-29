@@ -20,13 +20,23 @@
             </nav>
         </header>
         
-        <main>
-            <div id="banner">
+        <main class="main-contact">
+            <form class="form-contact">
+                <label class="entry-label" for="name">Nome Completo</label>
+                <input class="entry" type="text" name="" id="name" required>
+    
+                <label class="entry-label" for="email">Email</label>
+                <input class="entry" type="email" name="" id="email" required>
+    
+                <label class="entry-label" for="message">Deixe aqui seu comentário</label>
+                <textarea class="entry" name="" id="message" cols="30" rows="10"></textarea>
+    
                 
-            </div>
-            <div>
-                <img class="construction" src="./under_construction.png" alt="Site em construção">
-            </div>
+                <label for="check-mailing" class="entry-label" id="checkbox">Gostaria de receber nossas novidades por email?
+                    <input type="checkbox" name="" id="check-mailing"></label>
+    
+                <input class="entry" type="submit" value="Enviar formulário">
+            </form>
         </main>
 
         <footer>

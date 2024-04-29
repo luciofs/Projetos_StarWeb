@@ -53,11 +53,13 @@ li:hover {
 
 .actor-cards-container {
     width: 100%;
-    height: 600px;
+    height: 400px;
     display: flex;
     justify-content:space-around;
-    align-items: center;
-    background-color: black;
+    align-items:center;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding-top: 90px;
 }
 
 .cards-content {
@@ -71,16 +73,11 @@ li:hover {
 
 .cards {
     width: 70%;
-    height: 300px;
-    background-size: cover;
-    background-position: 50% 50%;
-    border-radius: 5px;
-    cursor: pointer;
+    height: 200px;
     transition: 1s;
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
-    padding: 0 0 20px 10px;
+    justify-content: flex-end;
     color: #fff;
     font-size: 18px;
     font-weight: bold;
@@ -132,16 +129,34 @@ footer {
     #banner {
         background-position: 40%;
         align-items: center;
-        margin-bottom: 20px;
+        
     }
 
-    .cards-content {
-        grid-template-columns: 1fr;
+    .actor-cards-container {
         width: 100%;
-        height: 1000px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        height: 1400px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: block;
+        justify-content: space-around;
+    }    
+
+    .cards-content {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        row-gap: 200px;
+        margin-bottom: 10px;
     }
+
+    .cards {
+        display: block;
+        justify-content:space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    
 
     footer {
         display: flex;
@@ -164,9 +179,11 @@ footer {
     }
 
     #spanfooter {
-        display: flex;
-        justify-content: space-around;
+        display: block;
+        justify-content: center;
         align-items: center;
+        margin-left: 30px;
+        margin-top: 10px;
     }
 
     .footer-nav {

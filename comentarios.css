@@ -4,7 +4,8 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    background-color: black;
+    background-color:black; 
+    
 }
 header {
     height: 120px;
@@ -45,26 +46,40 @@ li:hover {
     height: auto;
 }
 
-#banner {
-    background-image: url("https://media.istockphoto.com/id/1179785918/pt/vetorial/testimonial-speech-bubble-concept-customer-feedback-for-info-graphic-application-and.jpg?s=612x612&w=0&k=20&c=xeA9kyk-WEpLTLnDmZSsWDIE-OIWKdkNEquRp7nIB2w=");
-    background-position:50% 50%;
-    background-size: auto;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-contact {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:cadetblue;
+    padding: 10px;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/05/13/78/06/1000_F_513780627_asc4a4szhigr3nROtPmZaC3moPlXQLag.jpg");
 }
 
-.construction {
-    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLE11pewiK5TZfznQl2O6VNT4KIqDS2IlIp9ZNAkiPdGmMgFZ0nYaxYMq5550hK7bnQuqP23Na1TL6iT4p6BSlk0N1MHmPfDhPTk8hZxTUumvl7lB6X95hpmnXSCjq8ETGuRtvt5gLoZjA/s1600/site_em_construcao.jpg");
-    background-position:50% 50%;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.form-contact {
+    margin: 40px 0;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/05/13/78/06/1000_F_513780627_asc4a4szhigr3nROtPmZaC3moPlXQLag.jpg");
+ }
+
+.entry-label {
+    display: block;
+    margin: 8px auto;
+    width: 50%;
+    background-color:black
+}
+
+.entry, .form-contact textarea {
+    display: block;
+    margin: 0 auto 25px;
+    padding: 4px 9px;
+    font-size: 18px;
+    width: 50%;
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto;
+    background-color: #fff;
+}
+
+#checkbox, .div-entry {
+    margin: 30px auto;
 }
 
 footer {
@@ -101,48 +116,33 @@ footer {
         display: none;
     }
 
-    #banner {
-        background-position: 40%;
-        align-items: center;
-    }
-
-    #trailler-container {
+    .main-contact {
         width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
+        
+    }
+   
+    
+    .entry-label {
+        display: block;
+        margin: 8px auto;
+        width: 50%;
     }
     
-    .content {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
+    .entry, .form-contact textarea {
+        display: block;
+        margin: 0 auto 25px;
+        padding: 4px 9px;
+        font-size: 18px;
+        width: 50%;
+        box-sizing: border-box;
+        resize: none;
+        overflow: auto;
     }
     
-    .trailler {
-        width: 100%;
+    #checkbox, .div-entry {
+        margin: 30px auto;
     }
     
-    #sinopse {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .description {
-        width: 100%;
-    }
-
-    .button {
-        width: 100%;
-    }
-
-    .cards-content {
-        grid-template-columns: 1fr;
-        margin-top: 50px;
-    }
-
     footer {
         display: flex;
         justify-content: space-between;
@@ -162,9 +162,11 @@ footer {
     }
 
     #spanfooter {
-        display: flex;
-        justify-content: space-around;
+        display: block;
+        justify-content: center;
         align-items: center;
+        margin-left: 30px;
+        margin-top: 10px;
     }
 
     .footer-nav {

@@ -177,10 +177,12 @@ footer {
         align-items: center;
     }
 
-    #spanfooter {
-        display: flex;
-        justify-content: space-around;
+  #spanfooter {
+        display: block;
+        justify-content: center;
         align-items: center;
+        margin-left: 30px;
+        margin-top: 10px;
     }
 
     .footer-nav {
