@@ -117,48 +117,6 @@ footer {
         display: none;
     }
 
-    #banner {
-        background-position: 40%;
-        align-items: center;
-    }
-
-    #trailler-container {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .content {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .trailler {
-        width: 100%;
-    }
-    
-    #sinopse {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .description {
-        width: 100%;
-    }
-
-    .button {
-        width: 100%;
-    }
-
-    .cards-content {
-        grid-template-columns: 1fr;
-        margin-top: 50px;
-    }
-
     footer {
         display: flex;
         justify-content: space-between;
@@ -177,7 +135,7 @@ footer {
         align-items: center;
     }
 
-  #spanfooter {
+    #spanfooter {
         display: block;
         justify-content: center;
         align-items: center;

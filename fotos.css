@@ -138,7 +138,7 @@ footer {
         margin-top: 5px;
         margin-bottom: 5px;
         display: block;
-        justify-content: space-around;
+        justify-content: center;
     }    
 
     .cards-content {
@@ -151,6 +151,7 @@ footer {
     }
 
     .cards {
+        width: 75%;
         display: block;
         justify-content:space-between;
         align-items: center;
